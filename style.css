@@ -114,31 +114,41 @@ div > img {
       div.logo {
     padding: 0px;
       }
+      body {
+        overflow-x: hidden;
+      }
       .menu-toggle {
         display: block; /*Mostra apenas em telas pequenas */
         background: none;
         border: none;
-        font-size: 32px;
+        font-size: 28px;
         cursor: pointer;
         color: #0071b2;
       }
 header, nav {
-    padding: 20px 26px;
+    padding: 0px 26px;
 }
 .nav-menu,
 .botao-agendar,
 .social-icons {
     display: none;
+    position: absolute;
+    top: 0vh;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: #0071b2;
     flex-direction: column;
     align-items: center;
-    background-color: white;
-    position: absolute;
-    top: 80px;
-    right: 20px;
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px 0;
+    justify-content: space-around;
+   transform: translateX(100%);
+}
+.nav-menu li {
+    margin-left: 0;
+    opacity: 0;
+}
+.nav-menu.active {
+    transform: translateX(0);
 }
 .nav-menu.show,
 .botao-agendar.show,
@@ -149,6 +159,6 @@ nav {
     position: relative;
 }
 .mobile-only {
-    display: flex;
+    display: block;
 }
 }
