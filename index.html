@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icons/paws.svg" type="image/svg+xml"> <!--Ícone escolido para o topo de aba-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap" rel="stylesheet"> <!--Fontes escolhidas para compor o HTML-->
+</head>
+<body>
+    <header> <!--Criacao do topo da página, com logo e menu de navegacão-->
+    <div class="logo"> <!--Div criada para que fosse possível manipular a logo do petshop-->
+        <img src="logo/petshop (2).png" alt="Logo do PetShop">
+    </div>
+    <nav class="menu-navegacao"> <!--Menu de navegacao geral-->
+        <button class="menu-toggle" aria-label="Abrir Menu">&#9776</button>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#serviços">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li class="mobile-only"><a href="#agendar">Agendar</a></li>
+            <li class="mobile-only"><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+        <div class="botao-agendar"> <!--Div criada para que fosse possível manipular separadamente a opcao 'Agendar'-->
+            <a href="#agendamento" class="btn-agendar">Agendar</a>
+        </div>
+            <ul class="social-icons"> <!--inclusao dos dois icones das redes sociais e integracao com os seus respectivos links-->
+                <li>
+                    <a href="https://web.whatsapp.com/" target="_blank" aria-label="WhatssApp">
+                        <img src="icons/iconwhatsapp.svg" alt="WhatsApp" class="icon-social">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                        <img src="icons/iconinstagram.svg" alt="Instagram" class="icon-social">
+                    </a>
+                </li>
+            </ul>
+        
+    </nav>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+</html>

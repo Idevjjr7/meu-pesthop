@@ -1,0 +1,34 @@
+Paleta de Cores
+
+Azul: HEX: #0097b2
+      RGB rgba(0,151,178,255)
+
+      HEX #46b4c7
+      rgb(70,180,199)
+
+Verde: HEX #7ea18d
+       RGB: rgb(126,161,141)
+
+       HEX #345c60
+       RGB: rgb(52,92,96)
+
+Cores Terrosas: HEX #a57666
+                RGB rgb(165,118,102)
+
+                HEX #714f3a
+                RGB rgb(113,79,58)
+
+                HEX #a47b54
+                RGB rgb(164,123,84)
+
+                HEX #2e2827
+                RGB rgb(46,40,39)
+
+                HEX #f4c98f
+                rgb rgb(244,201,143)
+
+Outras Tonalidades: HEX #e1e7e4
+                    RGB rgb(225,231,228)
+
+Fontes:
+Menu de Navegacão: Roboto Url (="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap")

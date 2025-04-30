@@ -1,0 +1,154 @@
+@charset "UTF-8"; 
+/* Manipulacao geral do CSS*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Configuracoes gerais de CSS do nav */
+header, nav {
+    min-width: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 110px 40px 0px; /* Tentei centralizar um pouco mais o nav para ficar perto da imagem do centro */
+    background-color: white;
+    font-size: 22px;
+
+}
+
+/*Manipulacao da logo e sua imagem */
+div.logo {
+    padding: 0px 0px 0px 220px;
+    min-width:40px ;
+    margin: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+div > img {
+    width: 210px;
+}
+/*configuracoes inicias do nav */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+/*configuracoes dos itens da lista*/
+.nav-menu li a{
+    text-decoration: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #141414e1;
+    font-weight: 500;
+    padding-bottom: 4px;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease;
+}
+.nav-menu li a:hover {
+    border-bottom: 3px solid rgb(70,180,199); /*Efeito de sublinhado ao passar o mouse */
+    color:#1f1f1fe1 ;
+  }
+.botao-agendar{
+    margin: 0 20px; /*tamanho levemente alterado do botao agendar para as proximas configuracoes */
+  }
+.btn-agendar {
+    background-color: #0097b2;  /*Configuracoes gerais do botao Agendar */
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /*Mudanca de cor do botao no a:hover*/
+    border: none;
+    display: inline-block;
+   
+}
+.btn-agendar:hover {
+    background-color: #005cb2f1;
+    ;
+}
+/*configuracoes de CSS dos icones de redes sociais */
+.social-icons{
+    list-style: none;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    text-decoration: none;
+}
+/*Comeco dos efeitos */
+.social-icons img.icon-social {
+    width: 30px;
+    height: 30px;
+    opacity: 0.7; /* Opacidade inicial */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+/*Efeito de 'aumentar' */
+.social-icons a:hover img.icon-social {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.menu-toggle {
+    display: none; /* Esconde o menu hamburguer em telas de Desktop */
+}
+.mobile-only {
+    display: none;
+}
+@media(max-width: 1300px) { /* Pequeno ajuste para que a nav.menu nao se funda com a logo */
+    header, nav {
+        padding: 36px 65px 40px 0px; 
+    }
+    div.logo {
+        padding: 0px 0px 0px 130px;
+    }
+}
+@media (max-width: 999px) {
+      div.logo {
+    padding: 0px;
+      }
+      .menu-toggle {
+        display: block; /*Mostra apenas em telas pequenas */
+        background: none;
+        border: none;
+        font-size: 32px;
+        cursor: pointer;
+        color: #0071b2;
+      }
+header, nav {
+    padding: 20px 26px;
+}
+.nav-menu,
+.botao-agendar,
+.social-icons {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px 0;
+}
+.nav-menu.show,
+.botao-agendar.show,
+.social-icons.show {
+    display: flex;
+}
+nav {
+    position: relative;
+}
+.mobile-only {
+    display: flex;
+}
+}
