@@ -12,7 +12,7 @@ header, nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 90px 24px 0px; /* Tentei centralizar um pouco mais o nav para ficar perto da imagem do centro */
+    padding: 16px 90px 24px 0px; /* Tentei centralizar um pouco mais o nav para ficar perto da imagem do centro */
     background-color: white;
     font-size: 16px;
 
@@ -157,70 +157,70 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #007ea1;
-    margin: 5px 225px 0px 225px;
-    padding: 40px 20px;
-    height: 65vh;
+    background-color: #ffffff;
+   /* margin: 5px 225px 0px 225px;
+    padding: 40px 20px; */
+    margin: 10px auto;
+    padding: 10px 20px;
+    height: 75vh;
     max-width: 100%;
 } 
 
 .carrossel-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff7e8;
+    position: relative;
+    background-image: url(imagens/cachorro-sem-fundo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color:#fcebcc;
     border-radius: 32px;
-    padding: 50px 50px 50px 50px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    max-height: 100vh;
-    max-width: 1250px;
+    padding: 70px 26px 85px 26px;
+    max-width: 1350px;
     width: 100%;
-    gap: 40px;
-    flex-wrap: nowrap;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 } 
 .carrossel-texto{
-    flex: 1;
-    max-width: 600px;
+    max-width: 900px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
 }
 .carrossel-texto h2{
-    font-size: 2.5rem;
+    font-size: 5.0rem;
     color: #1f1f1f;
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 20px;
+    line-height: 1.0;
 }
-.carrosel-texto .destaque {
+.carrossel-texto h2 .destaque {
     color: #f6a600;
     font-weight: bold;
 }
-.carrosel-texto p {
-    font-size: 1.1rem;
+.carrossel-texto p {
+    font-size: 26px;
     color: #333;
-    margin-bottom: 20px;
-    max-width: 500px;
+    line-height: 1.0;
+    margin-bottom: 10px;
 }
 .carrossel-texto .btn-agendar {
     background-color: #0097b2;
     color: white;
-    padding: 10px 24px;
-    border-radius: 20px;
-    font-weight: 600;
+    padding: 12px 44px;
+    border-radius: 28px;
+    font-weight: 600px;
     text-decoration: none;
     display: inline-block;
+    width: fit-content;
+    max-width: 100%;
+    font-size: 1.4rem;
     transition: background-color 0.3s ease;
+    margin top: 10px;
 }
-.carrosel-texto .btn-agendar:hover {
+.btn-agendar:hover {
     background-color: #007ea1;
 }
 
-.carrossel-imagem {
-    flex: 1;
-    min-width: 280px;
-    text-align: right;
-}
-.carrossel-imagem img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 24px;
-    object-fit: contain;
-}
