@@ -57,6 +57,8 @@ div > img {
 .btn-agendar {
     background-color: #0097b2;  /*Configuracoes gerais do botao Agendar */
     color: white;
+    font-family: 'Nunito','Lato', sans-serif;
+    font-weight: bolder;
     padding: 8px 16px;
     border-radius: 20px;
     font-weight: 600;
@@ -168,14 +170,14 @@ nav {
 
 .carrossel-card {
     position: relative;
-    background-image: url(imagens/cachorro-sem-fundo.png);
+    background-image: url(imagens/huskdeoculos.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right center;
     background-color:#fcebcc;
     border-radius: 32px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    padding: 70px 26px 85px 26px;
+    padding: 65px 26px 80px 26px;
     max-width: 1350px;
     width: 100%;
     min-height: 400px;
@@ -191,10 +193,10 @@ nav {
     gap: 20px;
 }
 .carrossel-texto h2{
-    font-size: 5.0rem;
+    font-size: 5.2rem;
     color: #1f1f1f;
     font-family: 'Roboto', sans-serif;
-    line-height: 1.0;
+    line-height: 0.95;
 }
 .carrossel-texto h2 .destaque {
     color: #f6a600;
@@ -203,13 +205,15 @@ nav {
 .carrossel-texto p {
     font-size: 26px;
     color: #333;
-    line-height: 1.0;
-    margin-bottom: 10px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    line-height: 1.1;
+    margin-bottom: 5px;
 }
 .carrossel-texto .btn-agendar {
     background-color: #0097b2;
     color: white;
-    padding: 12px 44px;
+    font-weight: bolder;
+    padding: 12px 58px;
     border-radius: 28px;
     font-weight: 600px;
     text-decoration: none;
@@ -218,7 +222,7 @@ nav {
     max-width: 100%;
     font-size: 1.4rem;
     transition: background-color 0.3s ease;
-    margin top: 10px;
+    margin-top: 10px;
 }
 .btn-agendar:hover {
     background-color: #007ea1;
