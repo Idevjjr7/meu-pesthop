@@ -9,7 +9,7 @@
 /*Configuracoes gerais de CSS do nav */
 header, nav {
     min-width: 20px;
-    display: flex;
+    display: flex; /* alinha os itens lado a lado */
     justify-content: space-between;
     align-items: center;
     padding: 16px 90px 24px 0px; /* Tentei centralizar um pouco mais o nav para ficar perto da imagem do centro */
@@ -18,7 +18,7 @@ header, nav {
 
 }
 
-/*Manipulacao da logo e sua imagem */
+/*Manipulacao da logo e alinha a logo com o texto */
 div.logo {
     padding: 0px 0px 0px 180px;
     min-width:40px ;
@@ -27,10 +27,11 @@ div.logo {
     align-items: center;
     gap: 8px;
 }
+/* Manipulacao da imagem */
 div > img {
     width: 180px;
 }
-/*configuracoes inicias do nav */
+/*configuracoes inicias do nav(menu principal) */
 .nav-menu {
     list-style: none;
     display: flex;
@@ -39,12 +40,12 @@ div > img {
 }
 /*configuracoes dos itens da lista*/
 .nav-menu li a{
-    text-decoration: none;
+    text-decoration: none; /* Remove o sublinhado */
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     color: #141414e1;
     font-weight: 500;
     padding-bottom: 4px;
-    border-bottom: 3px solid transparent;
+    border-bottom: 3px solid transparent; /* Para efeito de hover */
     transition: border-color 0.3s ease;
 }
 .nav-menu li a:hover {
@@ -79,6 +80,7 @@ div > img {
     gap: 6px;
     align-items: center;
 }
+/* Estilo dos links dos ícones */
 .social-icons a {
     display: inline-flex;
     align-items: center;
@@ -86,7 +88,7 @@ div > img {
     padding: 4px;
     text-decoration: none;
 }
-/*Comeco dos efeitos */
+/* Estilo dos ícones sociais (imagens) */
 .social-icons img.icon-social {
     width: 30px;
     height: 30px;
@@ -98,52 +100,20 @@ div > img {
     opacity: 1;
     transform: scale(1.1);
 }
+/* Esconde o botão hamburguer por padrão (desktop) */
 .menu-toggle {
-    display: none; /* Esconde o menu hamburguer em telas de Desktop */
+    display: none; 
 }
+/* Deixa o conteudo exclusivo para mobile */
 .mobile-only {
     display: none;
 }
- @media (max-width: 1350px) and (min-width: 1000px) {
-    .carrossel {
-        padding: 20px 40px;
-        height: auto;
-    }
-
-    .carrossel-card {
-        background-size: 400px;
-        background-position: right bottom;
-        padding: 50px 20px;
-        min-height: 380px;
-    }
-    .carrossel-texto {
-        max-width: 70%; 
-        padding: 20px;
-        gap: 18px;
-    }
-    .carrossel-texto h2 {
-        font-size: 3.6em;
-    }
-    .carrossel-texto p {
-        font-size: 20px;
-    }
-    .carrossel-texto .btn-agendar {
-        padding: 10px 40px;
-        font-size: 1.2rem;
-    }
-} 
-@media(max-width: 1300px) { /* Pequeno ajuste para que a nav.menu nao se funda com a logo */
-    header, nav {
-        padding: 36px 65px 40px 0px; 
-    }
-    div.logo {
-        padding: 0px 0px 0px 130px;
-    }
-}
+/* Media Query para telas menores que 999px */
 @media (max-width: 999px) {
       div.logo {
     padding: 0px;
       }
+      /*Exibe o botao de menu hamburguer */
       .menu-toggle {
         display: block; /*Mostra apenas em telas pequenas */
         background: none;
@@ -152,9 +122,11 @@ div > img {
         cursor: pointer;
         color: #0071b2;
       }
+      /* Ajusta o head e o nav */
 header, nav {
     padding: 20px 26px;
 }
+/* Oculta menus e mostra ao clicar (JS) */
 .nav-menu,
 .botao-agendar,
 .social-icons {
@@ -182,6 +154,7 @@ nav {
     display: flex;
 }
 }
+/*container principal do carrossel (slider) */
 .carrossel {
     align-content: center;
     display: flex;
@@ -193,7 +166,7 @@ nav {
     height: 75vh;
     max-width: 100%;
 } 
-
+/* primeiro cartao do carrossel */
 .carrossel-card {
     position: relative;
     background-image: url(imagens/huskdeoculos.png);
@@ -253,4 +226,42 @@ nav {
 .btn-agendar:hover {
     background-color: #007ea1;
 }
+@media (max-width: 1600px) and (min-width: 1441px){ /* Media Query para notebooks (responsividade ) */
+    header, nav {
+        padding: 10px 65px 10px 0px; 
+    }
+    div.logo {
+        padding: 0px 0px 0px 130px;
+    }
+    .carrossel {
+        padding: 0px 220px;
+        margin: 0px auto;
+        height: auto;
+    }
 
+    .carrossel-card {
+        background-image: url(imagens/huskdeoculos.png);
+        background-size: contain;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        padding: 40px 30px 40px 50px;
+        min-height: 300px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .carrossel-texto {
+        max-width: 700px; 
+        padding: 20px;
+        gap: 18px;
+    }
+    .carrossel-texto h2 {
+        font-size: 3.8em;
+    }
+    .carrossel-texto p {
+        font-size: 22px;
+    }
+    .carrossel-texto .btn-agendar {
+        padding: 10px 40px;
+        font-size: 1.4rem;
+    }
+}
