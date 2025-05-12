@@ -114,14 +114,14 @@ div > img {
     padding: 0px;
       }
       /*Exibe o botao de menu hamburguer */
-      .menu-toggle {
-        display: block; /*Mostra apenas em telas pequenas */
-        background: none;
-        border: none;
-        font-size: 32px;
-        cursor: pointer;
-        color: #0071b2;
-      }
+.menu-toggle {
+    display: block; /*Mostra apenas em telas pequenas */
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #0071b2;
+    }
       /* Ajusta o head e o nav */
 header, nav {
     padding: 20px 26px;
@@ -226,7 +226,7 @@ nav {
 .btn-agendar:hover {
     background-color: #007ea1;
 }
-@media (max-width: 1600px) and (min-width: 1441px){ /* Media Query para notebooks (responsividade ) */
+@media (max-width: 1600px) and (min-width: 1300px){ /* Media Query para notebooks (responsividade ) */
     header, nav {
         padding: 10px 65px 10px 0px; 
     }
@@ -265,3 +265,47 @@ nav {
         font-size: 1.4rem;
     }
 }
+ @media (max-width: 768px) 
+ /* Media Query para celulares */
+ {
+    .carrossel-card {
+        flex-direction: columm;
+        align-items: center;
+        text-align: left;
+        padding: 32px 16px;
+        background-size: cover;
+        background-position: center;
+        min-height: auto;
+    }
+    .carrossel-card .texto{
+        max-width: 100%;
+        padding: 0;
+    }
+    .carrossel-card h1{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .carrossel-card h1 span {
+        font-size: 2.2rem;
+        color: #f5a623;
+    }
+    .carrossel-card p {
+        font-size: 1rem;
+        margin: 16px 0;
+    }
+    .carrossel-card .botao {
+        width: 100%;
+        padding: 14px 0;
+        font-size: 1rem;
+    }
+.carrossel-card::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        background-color: url(imagens/huskdeoculos-small.png) no-repeat center;
+        background-size: contain;
+        margin-top: 24px;
+    }
+ }
