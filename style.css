@@ -108,6 +108,9 @@ div > img {
 .mobile-only {
     display: none;
 }
+#mobile-image {
+    display: none;
+}
 /* Media Query para telas menores que 999px */
 @media (max-width: 999px) {
       div.logo {
@@ -172,7 +175,7 @@ nav {
     background-image: url(imagens/huskdeoculos.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right center; 
     background-color:#fcebcc;
     border-radius: 32px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -182,8 +185,13 @@ nav {
     min-height: 400px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
 } 
+.carrossel-imagem img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
 .carrossel-texto{
     max-width: 900px;
     padding: 30px;
@@ -268,44 +276,79 @@ nav {
  @media (max-width: 768px) 
  /* Media Query para celulares */
  {
+    header, nav {
+        padding: 16px 8px 10px 8px;
+        background-color: #fcf5e8;
+    }
+    body {
+        background-color: #fcf5e8;
+
+    }
+    div.logo{
+        position: relative;
+        z-index: 10;
+        padding: 0;
+        justify-content: flex-start;
+    }
+    div > img {
+        width: 140px;
+    }
+    .menu-toggle{
+        color: #1f1f1f;
+        font-size: 30px;
+        display: block;
+        position: relative;
+        z-index: 10;
+    }
+    .nav-menu {
+        z-index: 10;
+    }
+    .carrossel{
+        padding: 10px;
+        background-color: #fcf5e8;
+    }
     .carrossel-card {
-        flex-direction: columm;
+        border-radius: none;
+        box-shadow: none;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 1;
+        background-image: none;
+        background-color: #fcf5e8;
         align-items: center;
-        text-align: left;
-        padding: 32px 16px;
-        background-size: cover;
-        background-position: center;
+        text-align: center;
+        padding: 14px 6px;
+        width: 100%;
         min-height: auto;
     }
-    .carrossel-card .texto{
+    #mobile-image{
+        display: flex;
+        align-items: right;
+        max-width: 400px;
+    }
+    .carrossel-texto{
+        text-align: left;
         max-width: 100%;
-        padding: 0;
+        padding: 0px;
+        gap: 0px;
     }
-    .carrossel-card h1{
-        font-size: 2rem;
-        line-height: 2.5rem;
+    .carrossel-texto h2 {
+        font-size: 2.8rem;
+        line-height: 1.0;
     }
-    .carrossel-card h1 span {
-        font-size: 2.2rem;
+    .carrossel-card h2 .destaque {
+        font-size: 2.8rem;
         color: #f5a623;
     }
-    .carrossel-card p {
+    .carrossel-texto p {
         font-size: 1rem;
         margin: 16px 0;
     }
-    .carrossel-card .botao {
+    .carrossel-texto .btn-agendar {
+        text-align: center;
+        align-items: center;
         width: 100%;
         padding: 14px 0;
         font-size: 1rem;
-    }
-.carrossel-card::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: auto;
-        aspect-ratio: 1/1;
-        background-color: url(imagens/huskdeoculos-small.png) no-repeat center;
-        background-size: contain;
-        margin-top: 24px;
     }
  }
