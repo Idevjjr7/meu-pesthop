@@ -210,6 +210,7 @@ nav {
     font-weight: bold;
 }
 .carrossel-texto p {
+    max-width: 540px;
     font-size: 26px;
     color: #333;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
@@ -266,6 +267,7 @@ nav {
         font-size: 3.8em;
     }
     .carrossel-texto p {
+        max-width: 410px;
         font-size: 22px;
     }
     .carrossel-texto .btn-agendar {
@@ -277,7 +279,7 @@ nav {
  /* Media Query para celulares */
  {
     header, nav {
-        padding: 16px 8px 10px 8px;
+        padding: 14px 8px 10px 10px;
         background-color: #fcf5e8;
     }
     body {
@@ -322,17 +324,26 @@ nav {
         min-height: auto;
     }
     #mobile-image{
+        padding: -40px;
         display: flex;
-        align-items: right;
-        max-width: 400px;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
     }
+   #mobile-image img {
+    width: 100%; 
+    height: auto;
+    max-width: 400px;
+   }
     .carrossel-texto{
+        display: flex;
         text-align: left;
         max-width: 100%;
         padding: 0px;
         gap: 0px;
     }
     .carrossel-texto h2 {
+        max-width: 350px;
         font-size: 2.8rem;
         line-height: 1.0;
     }
