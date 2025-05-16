@@ -343,7 +343,8 @@ nav {
         gap: 0px;
     }
     .carrossel-texto h2 {
-        max-width: 350px;
+        white-space: ;
+        max-width: 300px;
         font-size: 2.8rem;
         line-height: 1.0;
     }
