@@ -243,7 +243,7 @@ nav {
         padding: 0px 0px 0px 130px;
     }
     .carrossel {
-        padding: 0px 220px;
+        padding: 40px 220px;
         margin: 0px auto;
         height: auto;
     }
@@ -324,7 +324,7 @@ nav {
         min-height: auto;
     }
     #mobile-image{
-        padding: -40px;
+        padding: 0px;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
@@ -356,6 +356,7 @@ nav {
         margin: 16px 0;
     }
     .carrossel-texto .btn-agendar {
+        margin: 0px;
         text-align: center;
         align-items: center;
         width: 100%;
